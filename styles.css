@@ -1,36 +1,29 @@
-body{
-    background-color: rgb(2, 2, 26);
-    background-image: url(./images/bg-desktop-dark.jpg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-
+body {
+  background-color: rgb(2, 2, 26);
+  background-image: url(./images/bg-desktop-dark.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
-.todo{
-    text-align: center;
-    font-size: 18px;
-    color: white;
-    font-weight:lighter;
-    margin-top: 200px;
-    
-    
+.todo {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  margin-top: 200px;
 }
-.page-banner{
-    width:100%;
+.page-banner {
+  width: 100%;
 }
-.page-banner img{
-    width: 1000px;
+.page-banner img {
+  width: 1000px;
 }
-.container-0{
-    width: 40%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 40px auto;
-
+.container-0 {
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px auto;
 }
-
-
 
 #add-newTodo {
   width: 100%;
@@ -42,7 +35,6 @@ body{
   justify-content: center;
   align-items: center;
   border-left: 0px;
-  
 }
 
 #add-newTodo input[type="text"] {
@@ -50,7 +42,7 @@ body{
   padding: 40px;
   display: inline-block;
   background-color: rgb(44, 37, 77);
-  width: 300px;
+  width: 100%;
   flex-grow: 1;
   font-size: 25px;
 }
@@ -62,144 +54,170 @@ body{
   border-radius: 50px;
   padding: 10px 20px;
   cursor: pointer;
-  
 }
-.new{
+.new {
   width: 100%;
   align-items: center;
   justify-content: center;
-  
+  margin-bottom: 100px;
 }
- 
 
-#add-newTodo ul li{
-  list-style-type: none;
-}
-#add-newTodo ul{
+#add-newTodo ul {
   padding: 0px;
 }
 
 #add-newTodo:before {
-    
-  content: ''; /* Empty content for the pseudo-element */
+  content: ""; /* Empty content for the pseudo-element */
   width: 20px; /* Width of the circle */
   height: 20px; /* Height of the circle */
   border-bottom: 2px solid #ccc; /* Border for the circle */
   border-radius: 50%; /* Make it round */
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
-.todo-2 ul li{
-    padding: 18px;
-    list-style-type: circle;
-    font-size: 25px;
-    border-bottom: 1px solid white;
+.todo-2 ul li {
+  border-bottom: 1px solid #4b4a4a;
+ width: 100%;
+  padding: 30px;
+  display: flex; /* Use flexbox for alignment */
+  align-items: start;
+  margin-bottom: 20px;
+  justify-content: left;
+  list-style-type: circle;
+  font-size: 35px;
+  
+
+  /* Align items vertically */
+}
+
+.todo-2 ul{
+  border-bottom: 1px solid;
+}
+.todo-2 {
+  background-color: rgb(44, 37, 77);
+  padding: 0px ;
+  margin-bottom: 50px;
+  margin-left: 0px;
     
 }
-.todo-2 ul {
-     
-    padding: 0px
-     
-  }
+
+.todo-2 ul li:before {
+  content: " "; /* Empty content for the pseudo-element */
+  width: 20px; /* Width of the circle */
+  height: 20px; /* Height of the circle */
+  border-bottom: 1px solid #ffffff; /* Border for the circle */
+  border-radius: 100%; /* Make it round */
+  margin-right: 20px; /* Add margin between circle and text */
+}
+.todo-2 ul li.marked {
+  text-decoration: line-through;
+}
+
+.todo-2 ul li.marked:before {
+  color: rgb(0, 255, 200);
+}
+.below ul {
+  list-style-type: none;
+  margin-top: 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
   
-  .todo-2 ul li {
-    border-bottom: 1px solid #ccc; 
-     
-    padding: 20px; /* Add padding to create space */
-    margin-bottom: 0px; /* Add margin between list items */
-    display: flex; /* Use flexbox for alignment */
-    align-items: center;
-    
-     
-    /* Align items vertically */
-  }
-  .todo-2{
-    background-color: rgb(44, 37, 77);
-    border-top: 2rem;
-    padding: 30px;
-    
-  }
+  border-radius: 0px;
+  justify-content: space-evenly;
+  background-color: rgb(44, 37, 77);
+}
+
+.below ul li {
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.todo-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.below-2{
+  display: flex;
+  flex-direction: row;
+  border: none;
+}
+
+.below {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(44, 37, 77);
+  padding: 10px;
   
-  .todo-2 ul li:before {
-    
-    content: ''; /* Empty content for the pseudo-element */
-    width: 20px; /* Width of the circle */
-    height: 20px; /* Height of the circle */
-    border-bottom: 2px solid #ccc; /* Border for the circle */
-    border-radius: 50%; /* Make it round */
-    margin-right: 10px; /* Add margin between circle and text */
-  }
-  .todo-2 ul li.marked{
-    
-    text-decoration: line-through;
-  }
+  flex-basis: 30% 20% 30%;
+}
+
+.below div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
   
-  .todo-2 ul li.marked:before{
-    color: rgb(0, 255, 200);
-  }
-  .below ul {
-    list-style-type: none; 
-    padding: 0px; 
-    display: flex; 
-    justify-content: center; 
-    border: 1px solid #ccc; 
-    border-radius: 0px; 
-    justify-content: space-evenly;
-    background-color: rgb(44, 37, 77);
-    
-  }
-  
-  .below ul li {
-    padding: 10px 20px; 
-  }
-  
-  .todo-1{
+}
+
+.below ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.below ul li {
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+.all{
+  text-decoration: blue;
+}
+@media screen and (max-width: 600px) {
+  .todo {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .below {
+    display: flex;
+    height: auto;
+    padding: 10px;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    text-align: center;
   }
 
-  @media screen and (max-width: 600px) {
-    .todo{
-        display: flex;
-        flex-direction: column;
-        margin-top: 0px;
-        
-        
-    }
-    .below{
-        display: flex;
-        height: auto;
-        padding: 10px;
-        flex-direction: row;
-        width: 100%;
-        
-    }
-    .below ul {
-        display: flex;
-        flex-direction: column;
-
-    }
-    .container-0{
-        display: flex;
-        flex-direction: column;
-        width: 30rem;
-        padding: 20px;
-        justify-content: left;
-        align-items: start;
-        height: auto;
-        
-    }
-    .todo-2{
-        align-items: start;
-        justify-content: left;
-        margin-left: opx;
-        height: auto;
-        background-color: rgb(82, 75, 75);
-    }
- .todo-1{
+  .
+  .below ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-0 {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    padding: 20px;
+    justify-content: left;
+    align-items: start;
+    height: auto;
+  }
+  .todo-2 {
+    align-items: start;
+    justify-content: left;
+    margin-left: opx;
+    height: auto;
+    background-color: rgb(82, 75, 75);
+  }
+  .todo-1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
- }
   }
+}
