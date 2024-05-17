@@ -11,7 +11,7 @@ body{
     font-size: 18px;
     color: white;
     font-weight:lighter;
-    margin-top: 300px;
+    margin-top: 200px;
     
     
 }
@@ -30,22 +30,82 @@ body{
 
 }
 
-.todo-2 ul li{
-    padding: 8px;
-    list-style-type: circle;
+
+
+#add-newTodo {
+  width: 100%;
+  background-color: rgb(44, 37, 77);
+  padding: 0px;
+  border-bottom: 1px solid white;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 0px;
+  
+}
+
+#add-newTodo input[type="text"] {
+  display: block;
+  padding: 40px;
+  display: inline-block;
+  background-color: rgb(44, 37, 77);
+  width: 300px;
+  flex-grow: 1;
+  font-size: 25px;
+}
+
+#add-newTodo input[type="submit"] {
+  background-color: #63b3ed;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  
+}
+.new{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  
+}
+ 
+
+#add-newTodo ul li{
+  list-style-type: none;
+}
+#add-newTodo ul{
+  padding: 0px;
+}
+
+#add-newTodo:before {
     
-    border: 1px solid white;
+  content: ''; /* Empty content for the pseudo-element */
+  width: 20px; /* Width of the circle */
+  height: 20px; /* Height of the circle */
+  border-bottom: 2px solid #ccc; /* Border for the circle */
+  border-radius: 50%; /* Make it round */
+  margin-right: 10px; 
+}
+
+.todo-2 ul li{
+    padding: 18px;
+    list-style-type: circle;
+    font-size: 25px;
+    border-bottom: 1px solid white;
     
 }
 .todo-2 ul {
-    list-style-type: none; 
-    padding: 0; 
+     
+    padding: 0px
+     
   }
   
   .todo-2 ul li {
-    border: 2px solid #ccc; 
-    border-radius: 0px; 
-    padding: 10px 20px; /* Add padding to create space */
+    border-bottom: 1px solid #ccc; 
+     
+    padding: 20px; /* Add padding to create space */
     margin-bottom: 0px; /* Add margin between list items */
     display: flex; /* Use flexbox for alignment */
     align-items: center;
@@ -54,7 +114,10 @@ body{
     /* Align items vertically */
   }
   .todo-2{
-    background-color: rgb(49, 45, 45);
+    background-color: rgb(44, 37, 77);
+    border-top: 2rem;
+    padding: 30px;
+    
   }
   
   .todo-2 ul li:before {
@@ -62,7 +125,7 @@ body{
     content: ''; /* Empty content for the pseudo-element */
     width: 20px; /* Width of the circle */
     height: 20px; /* Height of the circle */
-    border: 2px solid #ccc; /* Border for the circle */
+    border-bottom: 2px solid #ccc; /* Border for the circle */
     border-radius: 50%; /* Make it round */
     margin-right: 10px; /* Add margin between circle and text */
   }
@@ -82,6 +145,7 @@ body{
     border: 1px solid #ccc; 
     border-radius: 0px; 
     justify-content: space-evenly;
+    background-color: rgb(44, 37, 77);
     
   }
   
@@ -106,6 +170,8 @@ body{
         display: flex;
         height: auto;
         padding: 10px;
+        flex-direction: row;
+        width: 100%;
         
     }
     .below ul {
