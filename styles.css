@@ -150,8 +150,8 @@ body {
   align-items: center;
   background-color: rgb(44, 37, 77);
   padding: 10px;
-  
-  flex-basis: 30% 20% 30%;
+  margin-top: 0px;
+  flex-basis:  30% 20% 30%;
 }
 
 .below div {
@@ -193,7 +193,7 @@ body {
     text-align: center;
   }
 
-  .
+  
   .below ul {
     display: flex;
     flex-direction: column;
